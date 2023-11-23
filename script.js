@@ -11,7 +11,7 @@ const dataPokedex = (data) => {
   const name = data.name[0].toUpperCase() + data.name.slice(1);
   /*const type = `${data.types[0].type.name}/${data.types[1].type.name}`;*/
   const type = data.types[0].type.name;
-  console.log(data);
+  // console.log(data);
   const html = `<div class="pokemon ${type}">
     <div class="imgContainer">
         <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${data.id}.png" alt="${name}"/>
@@ -58,5 +58,3 @@ btn.addEventListener("click", () => {
   pokemon(); // appel la fonction
 });
 
-//"https://pokeapi.co/api/v2/pokemon/{id or name}/"
-//"https://pokeapi.co/api/v2/ability/?limit=20&offset=20"
